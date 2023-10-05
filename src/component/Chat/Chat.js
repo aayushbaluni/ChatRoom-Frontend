@@ -8,7 +8,7 @@ import ScrollToBottom from "react-scroll-to-bottom";
 
 function Chat({}){
     
-    const socket=io('https://backend-chatroom2.onrender.com', { transports : ['websocket'] });;
+    const socket=io('https://backend-chatroom1.onrender.com', { transports : ['websocket'] });;
     const location=useLocation();
     const [name,setName]=useState('');
     const [room,setRoom]=useState('');
@@ -68,7 +68,7 @@ function Chat({}){
             </div>
             <div className="type">
                 <input className="input" value={message} onChange={val=>setMessage(val.target.value)} onKeyPress={event=>event.key==='Enter'?sendMessage():null}/>
-                <button className="button" onClick={sendMessage}>Send</button>
+                <button className="button" onClick={()=>sendMessage()}>Send</button>
             </div>
            </div>
         </div>
