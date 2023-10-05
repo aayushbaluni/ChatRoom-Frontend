@@ -76,6 +76,17 @@
     width: 50vh;
 }
 
+.button{
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #132043;
+    color: #EEEEEE;
+    opacity: 0.9;
+    border-color: #EEEEEE;
+}
+
 @media only screen and (max-width: 768px){
     
 .upper{
@@ -154,9 +165,22 @@
   }
   .type{
       padding-top: 8px;
+      display: flex;
+      flex-direction: row;
   }
   .input{
-      width: 70vw;
+      width: 50vw;
   }
+  
+.button{
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #132043;
+    color: #EEEEEE;
+    opacity: 0.9;
+    border-color: #EEEEEE;
+}
   
 }
